@@ -1,0 +1,220 @@
+.projects {
+    padding: 6rem 10% 5rem 10%;
+    background: transparent;
+    text-align: center;
+    color: var(--text-color);
+    position: relative;
+    z-index: 1;
+    animation: sectionSlideIn 1.5s ease-out;
+}
+
+.projects h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    animation: titleGlow 3s ease-in-out infinite alternate;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 24px #a259ffcc, 0 0 12px #0ef6cc99;
+    position: relative;
+}
+
+@keyframes titleGlow {
+    0% {
+        filter: drop-shadow(0 0 5px #a259ff99);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 20px #0ef6cc99);
+    }
+}
+
+.projects h2::after {
+    content: '';
+    display: block;
+    margin: 1rem auto 0 auto;
+    width: 80px;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #0ef6cc 0%, #a259ff 100%);
+    box-shadow: 0 0 16px #0ef6cc99, 0 0 8px #a259ff99;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-card {
+    background: rgba(0, 0, 0, 0.92);
+    backdrop-filter: blur(24px) saturate(140%);
+    box-shadow: 0 0 32px 8px #0ef6cc44, 0 0 64px 0 #a259ff33, 0 0 32px 0 #fff1;
+    border: 2px solid #0ef6cc;
+    border-radius: 22px;
+    padding: 0;
+    width: 100%;
+    max-width: 500px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    animation: projectFloat 6s ease-in-out infinite;
+}
+
+@keyframes projectFloat {
+
+    0%,
+    100% {
+        transform: translateY(0px) scale(1);
+    }
+
+    50% {
+        transform: translateY(-8px) scale(1.01);
+    }
+}
+
+.project-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 0 48px 12px #0ef6ccbb, 0 0 80px 0 #a259ffcc, 0 0 40px 0 #fff2;
+    border-color: #a259ff;
+}
+
+
+.project-content {
+    padding: 2rem;
+}
+
+.project-title {
+    color: #a259ff;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 12px #a259ff99;
+    font-weight: 700;
+}
+
+.project-description {
+    color: #e0e6ff;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    white-space: pre-line;
+    text-align: left;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+    background: rgba(14, 246, 204, 0.12);
+    color: #0ef6cc;
+    border-radius: 12px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid #0ef6cc44;
+    box-shadow: 0 0 8px #0ef6cc44;
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+    background: rgba(14, 246, 204, 0.2);
+    box-shadow: 0 0 12px #0ef6cc66;
+    transform: translateY(-2px);
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.project-link {
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+
+.live-link {
+    background: linear-gradient(90deg, #0ef6cc 0%, #a259ff 100%);
+    color: #fff;
+    box-shadow: 0 4px 16px #0ef6cc55, 0 0 8px #a259ff99;
+}
+
+.github-link {
+    background: linear-gradient(90deg, #a259ff 0%, #0ef6cc 100%);
+    color: #fff;
+    box-shadow: 0 4px 16px #a259ff55, 0 0 8px #0ef6cc99;
+}
+
+.project-link:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 32px #0ef6cc99, 0 0 16px #a259ffcc;
+}
+
+.live-link:hover {
+    background: linear-gradient(90deg, #a259ff 0%, #0ef6cc 100%);
+}
+
+.github-link:hover {
+    background: linear-gradient(90deg, #0ef6cc 0%, #a259ff 100%);
+}
+
+@media (max-width: 768px) {
+    .projects {
+        padding: 5rem 2% 2rem 2%;
+    }
+
+    .projects h2 {
+        font-size: 1.3rem;
+    }
+
+    .projects-container {
+        gap: 1rem;
+    }
+
+    .project-card {
+        max-width: 98vw;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project-content {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects {
+        padding: 4rem 0.5% 1rem 0.5%;
+    }
+
+    .projects h2 {
+        font-size: 1.1rem;
+    }
+
+    .project-card {
+        max-width: 99vw;
+        padding: 0.5rem;
+    }
+
+    .project-content {
+        padding: 0.5rem;
+    }
+}

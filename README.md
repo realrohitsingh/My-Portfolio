@@ -216,7 +216,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Email**: [your-email@example.com](mailto:your-email@example.com)
 - **LinkedIn**: [linkedin.com/in/rohit-singh-b10374189](https://www.linkedin.com/in/rohit-singh-b10374189/)
 - **GitHub**: [github.com/realrohitsingh](https://github.com/realrohitsingh)
-- **Portfolio**: [your-portfolio-url.vercel.app](https://your-portfolio-url.vercel.app)
+- **Portfolio**: [my-portfolio-nu-ten-93.vercel.app](https://my-portfolio-nu-ten-93.vercel.app)
 
 ## 🙏 Acknowledgments
 

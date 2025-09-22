@@ -130,9 +130,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ⭐ **Star this repository if you found it helpful!**
 
-![Portfolio Screenshot](https://drive.google.com/file/d/1ZscH1vyqzoVBci_GWWasA3mloiM1kmiv/view?usp=sharing)
-_Screenshot of the portfolio website_
-
 ---
 
 **Built with ❤️ by Rohit Singh**

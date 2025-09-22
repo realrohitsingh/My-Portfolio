@@ -164,9 +164,8 @@ function Header() {
           <button
             className="theme-toggle-btn"
             onClick={toggleTheme}
-            aria-label={`Switch to ${
-              theme === "dark" ? "light" : "dark"
-            } theme`}
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"
+              } theme`}
             title={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}>
             {theme === "dark" ? <FaSun /> : <FaMoon />}
           </button>
@@ -175,9 +174,8 @@ function Header() {
           <button
             className="theme-toggle-btn"
             onClick={toggleTheme}
-            aria-label={`Switch to ${
-              theme === "dark" ? "light" : "dark"
-            } theme`}
+            aria-label={`Switch to ${theme === "dark" ? "light" : "dark"
+              } theme`}
             title={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}>
             {theme === "dark" ? <FaSun /> : <FaMoon />}
           </button>
@@ -225,7 +223,7 @@ function Header() {
             </button>
           </a>
           <a
-            href="https://drive.google.com/file/d/1RNixBG7QIgmXzPmK7m90GVKevPBb1GNI/view"
+            href="https://drive.google.com/file/d/14VcKRgBccNdv1cJ8GNDFiejhTjBVgnt0/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Download my resume">

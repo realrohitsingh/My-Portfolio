@@ -15,17 +15,55 @@
   gap: 1rem;
 }
 
+/* Light theme readability for Footer */
+[data-theme="light"] .footer {
+  background: rgba(255, 255, 255, 0.9);
+  border-top-color: rgba(99, 102, 241, 0.25);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.12);
+  color: var(--text-color);
+}
+
+[data-theme="light"] .footer p {
+  color: var(--text-color);
+}
+
+/* Icon and button theming for better contrast in both themes */
+/* Dark theme (default) */
+body:not([data-theme="light"]) .footer .social-links a {
+  color: #ffffff;
+  opacity: 0.96;
+}
+
+/* Light theme */
+[data-theme="light"] .footer .social-links a {
+  color: var(--text-color);
+  text-shadow: 0 0 6px rgba(99, 102, 241, 0.25);
+}
+[data-theme="light"] .footer .social-links a:hover {
+  color: var(--primary-color);
+  text-shadow: 0 0 10px rgba(99, 102, 241, 0.35);
+}
+
+[data-theme="light"] .back-to-top {
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.18),
+    0 0 8px rgba(14, 246, 204, 0.25);
+}
+[data-theme="light"] .back-to-top:hover {
+  box-shadow: 0 8px 28px rgba(99, 102, 241, 0.28),
+    0 0 16px rgba(14, 246, 204, 0.35);
+}
+
 .social-links a {
   color: #e0e6ff;
   margin: 0 0.5rem;
   font-size: 1.8rem;
   transition: color 0.3s, transform 0.3s ease;
-  text-shadow: 0 0 8px #a259ffcc;
+  text-shadow: 0 0 10px #a259ffcc, 0 0 4px #0ef6cc88;
 }
 
 .social-links a:hover {
   color: var(--secondary-color);
-  text-shadow: 0 0 16px #0ef6cc, 0 0 8px #a259ff;
+  text-shadow: 0 0 18px #0ef6cc, 0 0 10px #a259ff;
 }
 
 .back-to-top {

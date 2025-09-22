@@ -1,12 +1,12 @@
-import { AnimatePresence, motion } from 'framer-motion';
-import About from './components/About';
-import AuroraBackground from './components/AuroraBackground';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import './index.css';
+import { AnimatePresence, motion } from "framer-motion";
+import About from "./components/About";
+import AuroraBackground from "./components/AuroraBackground";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import "./index.css";
 
 function App() {
   const pageVariants = {
@@ -17,8 +17,8 @@ function App() {
       opacity: 1,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
-      }
+        ease: "easeOut",
+      },
     },
     out: {
       opacity: 0,
@@ -33,8 +33,7 @@ function App() {
           initial="initial"
           animate="in"
           exit="out"
-          variants={pageVariants}
-        >
+          variants={pageVariants}>
           <Header />
           <About />
           <Skills />

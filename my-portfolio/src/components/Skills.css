@@ -25,7 +25,11 @@
   margin-bottom: 2rem;
   color: var(--primary-color);
   animation: titleGlow 3s ease-in-out infinite alternate;
-  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -34,7 +38,7 @@
 }
 
 .skills h2::after {
-  content: '';
+  content: "";
   display: block;
   margin: 1rem auto 0 auto;
   width: 80px;
@@ -75,7 +79,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .skill-card:hover {
@@ -165,6 +169,17 @@
     padding: 0.5rem;
     font-size: 0.85rem;
   }
+}
+
+/* Light theme adjustments for readability */
+[data-theme="light"] .skill-card {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.1);
+}
+
+[data-theme="light"] .skill-card:hover {
+  background: rgba(241, 245, 249, 0.95);
 }
 
 .slide-in-up {

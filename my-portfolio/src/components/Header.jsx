@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaMoon, FaSun, FaTimes } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
+import { useTheme } from "../hooks/useTheme";
 import "./Header.css";
 
 // Import profile image
@@ -19,6 +20,7 @@ function Header() {
   const [activeSection, setActiveSection] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -159,12 +161,32 @@ function Header() {
             className={activeSection === "contact" ? "active" : ""}>
             Contact
           </a>
+          <button
+            className="theme-toggle-btn"
+            onClick={toggleTheme}
+            aria-label={`Switch to ${
+              theme === "dark" ? "light" : "dark"
+            } theme`}
+            title={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}>
+            {theme === "dark" ? <FaSun /> : <FaMoon />}
+          </button>
         </div>
-        <div
-          className="hamburger"
-          onClick={handleHamburgerClick}
-          aria-label="Toggle navigation menu">
-          {isMenuOpen ? <FaTimes /> : <FaBars />}
+        <div className="nav-actions-mobile">
+          <button
+            className="theme-toggle-btn"
+            onClick={toggleTheme}
+            aria-label={`Switch to ${
+              theme === "dark" ? "light" : "dark"
+            } theme`}
+            title={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}>
+            {theme === "dark" ? <FaSun /> : <FaMoon />}
+          </button>
+          <div
+            className="hamburger"
+            onClick={handleHamburgerClick}
+            aria-label="Toggle navigation menu">
+            {isMenuOpen ? <FaTimes /> : <FaBars />}
+          </div>
         </div>
       </nav>
       <div

@@ -23,7 +23,11 @@
 .contact h2 {
   color: var(--primary-color);
   animation: titleGlow 3s ease-in-out infinite alternate;
-  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -34,7 +38,7 @@
 }
 
 .contact h2::after {
-  content: '';
+  content: "";
   display: block;
   margin: 1rem auto 0 auto;
   width: 80px;
@@ -70,8 +74,18 @@
   animation: contactFloat 6s ease-in-out infinite;
 }
 
-@keyframes contactFloat {
+/* Light theme readability for Contact */
+[data-theme="light"] .contact-form {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(99, 102, 241, 0.35);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.12);
+}
 
+[data-theme="light"] .success-message {
+  background: rgba(241, 245, 249, 0.9);
+}
+
+@keyframes contactFloat {
   0%,
   100% {
     transform: translateY(0px) scale(1);
@@ -275,7 +289,8 @@
   border-radius: 50%;
   opacity: 0.7;
   box-shadow: 0 0 8px 2px #fff8, 0 0 2px 1px #a259ff88;
-  animation: contactStarTwinkle 3s infinite alternate, contactStarFloat 8s ease-in-out infinite;
+  animation: contactStarTwinkle 3s infinite alternate,
+    contactStarFloat 8s ease-in-out infinite;
 }
 
 @keyframes contactStarTwinkle {

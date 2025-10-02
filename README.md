@@ -68,69 +68,6 @@ my-portfolio/
 ├── vercel.json
 └── package.json
 ```
-
-## 🌐 Deployment
-
-### Deploy to Vercel (Recommended)
-
-1. **Push to GitHub**
-
-   ```bash
-   git add .
-   git commit -m "Ready for deployment"
-   git push origin main
-   ```
-
-2. **Deploy on Vercel**
-   - Go to [vercel.com](https://vercel.com)
-   - Sign in with GitHub
-   - Click "New Project"
-   - Import your repository
-   - Click "Deploy"
-
-### Other Deployment Options
-
-- **Netlify**: Drag and drop the `dist` folder
-- **GitHub Pages**: Use GitHub Actions for automatic deployment
-- **Firebase Hosting**: Use Firebase CLI
-
-## 📧 Contact Form Setup
-
-The contact form uses EmailJS. To set up your own:
-
-1. **Create EmailJS Account**
-
-   - Go to [emailjs.com](https://emailjs.com)
-   - Create a free account
-
-2. **Set up Service**
-
-   - Create an email service (Gmail, Outlook, etc.)
-   - Create an email template
-   - Get your service ID, template ID, and user ID
-
-3. **Configure Environment Variables** (Optional)
-   ```env
-   VITE_EMAILJS_SERVICE_ID=your_service_id
-   VITE_EMAILJS_TEMPLATE_ID=your_template_id
-   VITE_EMAILJS_USER_ID=your_user_id
-   ```
-
-## 🎨 Customization
-
-### Colors
-
-Update the CSS variables in `src/index.css`:
-
-```css
-:root {
-  --primary-color: #a259ff;
-  --secondary-color: #0ef6cc;
-  --text-color: #e0e6ff;
-  /* ... other variables */
-}
-```
-
 ### Content
 
 - **Profile Image**: Replace `src/assets/profile.jpg`
@@ -178,10 +115,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **LinkedIn**: [linkedin.com/in/rohit-singh-b10374189](https://www.linkedin.com/in/rohit-singh-b10374189/)
 - **GitHub**: [github.com/realrohitsingh](https://github.com/realrohitsingh)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Portfolio**: [your-portfolio-url.vercel.app](https://my-portfolio-nu-ten-93.vercel.app/)
 =======
 - **Portfolio**: [my-portfolio-nu-ten-93.vercel.app](https://my-portfolio-nu-ten-93.vercel.app)
 >>>>>>> fb67ca1 (update v1.0.2)
+=======
+- **Portfolio**: [my-portfolio-nu-ten-93.vercel.app](https://my-portfolio-nu-ten-93.vercel.app)
+>>>>>>>
+>>>>>>> 4680e25b55882d132bda600b60995199a8a306b2
 
 ## 🙏 Acknowledgments
 
@@ -194,9 +136,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 ⭐ **Star this repository if you found it helpful!**
-
-![Portfolio Screenshot](https://via.placeholder.com/800x400/1a1a2e/0ef6cc?text=Portfolio+Preview)
-_Screenshot of the portfolio website_
 
 ---
 

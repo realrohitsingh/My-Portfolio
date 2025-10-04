@@ -3,28 +3,30 @@ import "./Projects.css";
 
 const projects = [
   {
-    title: "SmartShop E-Commerce Application | Oct 2025 – Present",
-    description: `A full-stack e-commerce web application designed with a modern Web Application design. The application features separate, secure dashboards for user shopping and administrative management.\n\n– Front-End: The user interface was built with React.js, leveraging its component-based architecture for reusability and state management. React Router was employed for client-side routing to create a seamless single-page application (SPA) experience. Styling was handled with Tailwind CSS for a utility-first, responsive design.\n– API & State Management: Asynchronous API calls to the backend were managed using Axios. Client-side state was handled efficiently through React Hooks to manage user sessions, shopping cart data, and product information.\n– Back-End Simulation: To facilitate rapid development and testing, a complete mock backend was constructed using JSON Server. This involved defining a schema for products, users, and admins, and exposing RESTful API endpoints that mimic a production environment, enabling full data persistence and manipulation.`,
-    tech: ["React.js", "Tailwind CSS", "Axios", "JSON Server", "React Router"],
+    title: "SmartShop E-Commerce Admin Dashboard | Oct 2025 – Present",
+    description: "Developed a feature-rich e-commerce admin dashboard with a modern, responsive UI. The application features separate, secure portals for user shopping and comprehensive store administration.\n\n- Dual Authentication System: Implemented distinct and secure authentication flows for administrators and users (including signup, login, and password recovery), using localStorage for persistent sessions and immediate login after registration.\n- Full-Stack Product Management: Engineered a complete CRUD (Create, Read, Update, Delete) interface for product management. All operations are persisted via a mock REST API, providing a real-time, dynamic experience.\n- Advanced UI/UX: Designed a modern, responsive interface featuring glassmorphism effects, gradient backgrounds, and smooth animations. The user experience is enhanced with toast notifications for all operations and graceful loading/error states.\n- Sophisticated Styling Architecture: Implemented a hybrid styling approach using Tailwind CSS v4. This combined a custom `@theme` and component layers in `App.css` for primary components with utility-based classes for secondary components, demonstrating a scalable and maintainable CSS strategy.\n- Efficient State & API Management: Utilized React Hooks (`useState`, `useEffect`, `useRef`) for robust client-side state management. Asynchronous API communication with the JSON Server backend was handled efficiently using Axios.",
+    tech: ["React.js", "Vite", "Tailwind CSS", "React Router", "Axios", "React Toastify", "JSON Server"],
     link: "Not yet Deployed but soon whe it is finished.",
-    github: "https://github.com/realrohitsingh/shopping-app-react-project.git",
+    github: "https://github.com/realrohitsingh/shopping-app-react-project.git"
   },
   {
-    title: "Intelligent Resume Screening Tool 2024 – 2025",
-    description: `An AI-powered resume screening system with a React.js frontend and Node.js, Express, MongoDB, and NLP-based backend.\n\n– Led a 4-member team, managing weekly sprints using agile methodology to ensure timely delivery of features.\n– Developed a fully responsive frontend interface with React.js and Bootstrap to improve user experience.\n– Integrated backend REST APIs and NLP modules to automatically evaluate and rank candidates based on skills and job requirements.\n– Deployed the project with live hosting and maintained documentation for future scalability.`,
+    title: "AI-Powered Resume Screening & Job Recommendation Platform | 2024 – 2025",
+    description: "Engineered a full-stack, AI-driven platform to streamline the hiring process by intelligently screening resumes and matching candidates to job opportunities. The application features dedicated dashboards for both job seekers and HR professionals.\n\n– Led a 4-member team using agile methodologies to manage weekly sprints, ensuring the timely delivery of project milestones.\n– Developed a fully responsive front-end interface with React.js and Material-UI, creating a modern and intuitive user experience with protected, role-based routes for different user types.\n– Built and integrated a Python-based REST API using Flask. The back-end leverages NLP libraries (NLTK, SpaCy) and machine learning (scikit-learn) to parse resumes, evaluate candidates, and provide job recommendations.\n– Deployed the full-stack application for live access and maintained comprehensive documentation for future development and scalability.",
     tech: [
       "React.js",
-      "Bootstrap",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "NLP",
-      "REST API",
-      "Agile",
+      "Python",
+      "Flask",
+      "scikit-learn",
+      "NLTK",
+      "SpaCy",
+      "Material-UI (MUI)",
+      "Axios",
+      "React Router",
+      "Agile"
     ],
     link: "https://resume-screening-tool-hz91.vercel.app/",
-    github: "https://github.com/realrohitsingh/Resume-Screening-Tool.git",
-  },
+    github: "https://github.com/realrohitsingh/Resume-Screening-Tool.git"
+  }
 ];
 
 function Projects() {
